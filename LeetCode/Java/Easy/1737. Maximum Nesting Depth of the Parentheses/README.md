@@ -51,9 +51,3 @@ Digit 3 is inside of 3 nested parentheses in the string.
 - `s`  consists of digits  `0-9`  and characters  `'+'` ,  `'-'` ,  `'*'` ,  `'/'` ,  `'('` , and  `')'` .
 	
 - It is guaranteed that parentheses expression  `s`  is a VPS.
-
----
-## Notes:
-1. Use charAt function if you want to access each element in a string without converting the string into an  array( reduces space complexity).
-2. Each opening bracket should be incremented with 1 and closing bracket with -1.
-3. Return the maximum number of of opening brackets.(since that would be the maximum depth)
