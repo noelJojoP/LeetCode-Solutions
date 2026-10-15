@@ -60,3 +60,15 @@ The sum of the squares of the distinct counts in all subarrays is equal to 12 + 
 - `1 <= nums.length <= 100`
 	
 - `1 <= nums[i] <= 100`
+---
+##Notes:
+A HashSet is a built-in Java collection used to store a collection of items where every element must be unique.
+Think of it like a smart checklist that automatically filters out copies.
+
+⚡ Key Features
+
+• No Duplicates: If you try to add a number that is already inside the set, it simply ignores it and does nothing.
+• No Order: It does not keep track of the order in which elements were added. It only cares about whether an item exists in the group or not.
+• Lightning Fast: Checking if an item is inside, adding a new item, or removing an item all happen instantly—in O(1) constant time.
+
+-Whenever a problem asks you to find "unique", "distinct", or "non-repeating" items, think HashSet immediately.
