@@ -76,10 +76,3 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 - `s`  contains only the characters  `('I', 'V', 'X', 'L', 'C', 'D', 'M')` .
 	
 - It is  **guaranteed**  that  `s`  is a valid roman numeral in the range  `[1, 3999]` .
-
----
-### Notes:
-1. We traverse through the string till the last second element( since we definitely know that the last element will be added to our total).
-2. We check whether the current letters value is less than the next letter's value,if it is true we first minus the value of the current letter and then in the next iteration we add the next letter's value to the total.(hence securing the exceptional casses as stated in the question)
-3. After all the iteration(ie. till the last second letter in the string),we add the last letter's value to the total.
-4. We use a switch case to map each letter,with its respective value inside a function.
