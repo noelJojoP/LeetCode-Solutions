@@ -1,6 +1,6 @@
 class Solution {
     public int minOperations(String s) {
-        int n = s.length();
+         int n = s.length();
         
         // 1. Base cases for very short strings
         if (n == 1) {
@@ -20,7 +20,7 @@ class Solution {
             return 0;
         }
         
-        // Find the absolute smallest and largest characters from the sorted string
+        // Find the absolute smallest and largest characters
         char minChar = sortedS.charAt(0);
         char maxChar = sortedS.charAt(n - 1);
         
@@ -29,12 +29,16 @@ class Solution {
             return 1;
         }
         
-        // 4. Case 3: The worst case scenario where max is at the front AND min is at the back
-        if (s.charAt(0) == maxChar && s.charAt(n - 1) == minChar) {
-            return 3;
+        // 4. Case 2 check: Look at the middle characters. 
+        // If there is ANY minChar or maxChar in the middle, it takes 2 operations.
+        for (int i = 1; i < n - 1; i++) {
+            if (s.charAt(i) == minChar || s.charAt(i) == maxChar) {
+                return 2; 
+            }
         }
         
-        // 5. Case 2: Everything else
-        return 2;
+        // 5. Case 3: The ultimate deadlock where max is only at the front 
+        // and min is only at the back (like "cba").
+        return 3;
     }
 }
