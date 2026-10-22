@@ -1,6 +1,6 @@
 # 📝 3942. Minimum Operations to Sort a Permutation (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/?envType=daily-question&envId=2026-10-22)
+🔗 [Problem Link](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
