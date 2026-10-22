@@ -40,9 +40,9 @@ class Solution {
         
         // Calculate the minimum operations using our formula grids
         if (isClimbing) {
-            return Math.min(zeroIdx, n - zeroIdx + 1);
+            return Math.min(zeroIdx, n - zeroIdx + 2);
         } else {
-            return Math.min(zeroIdx + 2, n - zeroIdx);
+            return Math.min(n - zeroIdx, ((zeroIdx + 1) % n) + 1);
         }
     }
 }
