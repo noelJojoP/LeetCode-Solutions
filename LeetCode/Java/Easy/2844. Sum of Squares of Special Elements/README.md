@@ -47,18 +47,3 @@ Hence, the sum of the squares of all special elements of nums is nums[1] * nums[
 - `1 <= nums.length == n <= 50`
 	
 - `1 <= nums[i] <= 50`
-
----
-### Notes:
-
-1. Define a variable to store the final result,that is to be returned at the end of the program.(here I have used result)
-2. Initialize a loop to traverse through the array.(There are two ways you can initialize the loop:1. Start the loop from 0(ie. i=0),then put the condition as i<nums.length and i++. 2.Start the loop from 1(ie.i=1),put condtion as i<= nums.length,and i++ )
-3. Inside the loop you set the condition for if.
-   - If the loop is initialized using the first method,then make sure that the condition is written as nums.length % (i+1) == 0,this avoids the error of division by zero,when i is at index 0.
-   - if its the second method,the condition would be nums.length % i == 0.
-4. If the if condition becomes true then we run the block inside if:
-    - If loop initiaized using first method : result += nums[i]*nums[i].
-    - if initialized using second method : result += nums[i-1]*nums[i-1].(to avoid index out of bound error)
-5. Return result.
-
-...
